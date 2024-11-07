@@ -1,0 +1,68 @@
+#about {
+  padding: 3rem 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.chef-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.chef-card:hover {
+  transform: scale(1.05);
+}
+
+.chef-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.chef-card h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.chef-card p {
+  margin: 0 1rem 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    padding-inline: 0.5rem;
+  }
+
+  .chef-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .chef-card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .chef-card h3 {
+    font-size: 1rem;
+  }
+
+  .chef-card p {
+    font-size: 0.8rem;
+  }
+}

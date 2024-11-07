@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url("../assets/images/background/bg1.jpg");
+  background-repeat: repeat-y;
+  background-size: contain;
+}

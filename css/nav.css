@@ -1,0 +1,126 @@
+/* Header Styling */
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo and Store Name Styling */
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 5px; /* Adjust spacing between logo and name */
+}
+
+.store-name {
+  font-size: 1.5em;
+  color: #333; /* Dark color for contrast */
+  margin: 0; /* Remove margin for close alignment */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #f9a825;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger .icon {
+  width: 24px;
+  height: 24px;
+  stroke: #333; /* Match the color of the menu text */
+  transition: 0.3s;
+}
+
+/* Mobile and Desktop View: Toggling Visibility */
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none; /* Hide nav-links initially */
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: flex; /* Show menu when checkbox is checked */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+
+  #menu-toggle:checked ~ .nav-links {
+    display: none; /* Hide menu on desktop when checkbox is checked */
+  }
+}

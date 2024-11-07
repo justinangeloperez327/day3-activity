@@ -1,0 +1,17 @@
+.heading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+}
