@@ -32,7 +32,7 @@ header {
 }
 
 .store-name {
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #333; /* Dark color for contrast */
   margin: 0; /* Remove margin for close alignment */
 }
@@ -55,6 +55,7 @@ nav {
   text-decoration: none;
   padding: 10px 15px;
   transition: color 0.3s;
+  font-size: 1.2rem;
 }
 
 .nav-links li a:hover {
