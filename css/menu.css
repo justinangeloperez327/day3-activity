@@ -71,6 +71,10 @@
   transition: background-color 0.3s ease;
 }
 
+.order-button:hover {
+  background-color: #f7b533;
+}
+
 .menu-card .bottom {
   display: flex;
   justify-content: space-between;

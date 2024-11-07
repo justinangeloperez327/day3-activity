@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  transition: transform 0.3s;
 }
 
 .review-image {
@@ -30,4 +31,29 @@
   font-size: 1.2rem;
   color: #ffc85c;
   margin-top: 1rem;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .review-card {
+    flex-direction: column;
+    text-align: center;
+    margin-inline: 0.5rem;
+  }
+
+  .review-card p {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .review-card {
+    margin-inline: 0.5rem;
+  }
+  .review-card h3 {
+    font-size: 1rem;
+  }
 }
