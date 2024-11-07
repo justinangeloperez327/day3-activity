@@ -66,3 +66,33 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    gap: 15px;
+  }
+
+  .chef-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .chef-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .about-grid {
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .chef-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .chef-card p {
+    font-size: 1rem;
+  }
+}

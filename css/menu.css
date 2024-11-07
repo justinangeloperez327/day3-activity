@@ -103,7 +103,7 @@
 
 @media (max-width: 480px) {
   .menu-grid {
-    grid-template-columns: repeat(1, 1fr); /* Two columns for mobile view */
+    grid-template-columns: repeat(1, 1fr); /* Single column for mobile view */
     padding-inline: 0.5rem;
   }
 
@@ -113,5 +113,41 @@
 
   .menu-card p {
     font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .menu-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(220px, 1fr)
+    ); /* Flexible columns for small desktops */
+    padding-inline: 1rem;
+  }
+
+  .menu-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .menu-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .menu-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Default columns for large desktops */
+    padding-inline: 2rem;
+  }
+
+  .menu-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .menu-card p {
+    font-size: 1rem;
   }
 }

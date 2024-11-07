@@ -83,3 +83,23 @@
     margin-inline: 0.5rem;
   }
 }
+/* Tablet view */
+@media (max-width: 1024px) {
+  .contact-form {
+    margin-right: 1rem;
+  }
+}
+
+/* Small desktop view */
+@media (max-width: 1200px) {
+  .contact-form {
+    margin-right: 1.5rem;
+  }
+}
+
+/* Large desktop view */
+@media (min-width: 1201px) {
+  .contact-form {
+    margin-right: 2rem;
+  }
+}

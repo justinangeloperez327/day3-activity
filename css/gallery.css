@@ -71,3 +71,24 @@
     font-size: 1rem;
   }
 }
+/* Desktop View (Above 1024px) */
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+  }
+
+  .gallery-card h2 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Desktop View (Above 1440px) */
+@media (min-width: 1440px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for large desktop */
+  }
+
+  .gallery-card h2 {
+    font-size: 3rem;
+  }
+}
